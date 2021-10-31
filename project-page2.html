@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		
+
+		
+		<!-- Custom CSS -->
+		<link href="Code-Snippets/dist/css/style.css" rel="stylesheet" type="text/css">
+        <link href="project-site.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!--Preloader-->
+		<div class="preloader-it">
+			<div class="la-anim-1"></div>
+		</div>
+		<!--/Preloader-->
+	    <div class="wrapper theme-1-active">
+		
+			<!-- Top Menu Items -->
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="mobile-only-brand pull-left">
+					<div class="nav-header pull-left">
+						<div class="logo-wrap">
+							<a href="index.html">
+								<img class="brand-img" src="bilder/MyTicket" alt="brand"/>
+								<span class="brand-text">MyTicket</span>
+							</a>
+						</div>
+					</div>	
+					<a id="toggle_nav_btn" class="toggle-left-nav-btn inline-block ml-20 pull-left" href="javascript:void(0);"><i class="zmdi zmdi-menu"></i></a>
+					<a id="toggle_mobile_search" data-toggle="collapse" data-target="#search_form" class="mobile-only-view" href="javascript:void(0);"><i class="zmdi zmdi-search"></i></a>
+					<a id="toggle_mobile_nav" class="mobile-only-view" href="javascript:void(0);"><i class="zmdi zmdi-more"></i></a>
+					<form id="search_form" role="search" class="top-nav-search collapse pull-left">
+						<div class="input-group">
+							<input type="text" name="example-input1-group2" class="form-control" placeholder="Search">
+							<span class="input-group-btn">
+							<button type="button" class="btn  btn-default"  data-target="#search_form" data-toggle="collapse" aria-label="Close" aria-expanded="true"><i class="zmdi zmdi-search"></i></button>
+							</span>
+						</div>
+					</form>
+				</div>
+				<div id="mobile_only_nav" class="mobile-only-nav pull-right">
+					<ul class="nav navbar-right top-nav pull-right">
+						
+					
+						
+						<li class="dropdown alert-drp">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="zmdi zmdi-notifications top-nav-icon"></i><span class="top-nav-icon-badge">5</span></a>
+							<ul  class="dropdown-menu alert-dropdown" data-dropdown-in="bounceIn" data-dropdown-out="bounceOut">
+								<li>
+									<div class="notification-box-head-wrap">
+										<span class="notification-box-head pull-left inline-block">notifications</span>
+										<a class="txt-danger pull-right clear-notifications inline-block" href="javascript:void(0)"> clear all </a>
+										<div class="clearfix"></div>
+										<hr class="light-grey-hr ma-0"/>
+									</div>
+								</li>
+								<li>
+									<div class="streamline message-nicescroll-bar">
+										<div class="sl-item">
+											<a href="javascript:void(0)">
+												<div class="icon bg-green">
+													<i class="zmdi zmdi-flag"></i>
+												</div>
+												<div class="sl-content">
+													<span class="inline-block capitalize-font  pull-left truncate head-notifications">
+													New subscription created</span>
+													<span class="inline-block font-11  pull-right notifications-time">2pm</span>
+													<div class="clearfix"></div>
+													<p class="truncate">Your customer subscribed for the basic plan. The customer will pay $25 per month.</p>
+												</div>
+											</a>	
+										</div>
+										<hr class="light-grey-hr ma-0"/>
+										<div class="sl-item">
+											<a href="javascript:void(0)">
+												<div class="icon bg-yellow">
+													<i class="zmdi zmdi-trending-down"></i>
+												</div>
+												<div class="sl-content">
+													<span class="inline-block capitalize-font  pull-left truncate head-notifications txt-warning">Server #2 not responding</span>
+													<span class="inline-block font-11 pull-right notifications-time">1pm</span>
+													<div class="clearfix"></div>
+													<p class="truncate">Some technical error occurred needs to be resolved.</p>
+												</div>
+											</a>	
+										</div>
+										<hr class="light-grey-hr ma-0"/>
+										<div class="sl-item">
+											<a href="javascript:void(0)">
+												<div class="icon bg-blue">
+													<i class="zmdi zmdi-email"></i>
+												</div>
+												<div class="sl-content">
+													<span class="inline-block capitalize-font  pull-left truncate head-notifications">2 new messages</span>
+													<span class="inline-block font-11  pull-right notifications-time">4pm</span>
+													<div class="clearfix"></div>
+													<p class="truncate"> The last payment for your G Suite Basic subscription failed.</p>
+												</div>
+											</a>	
+										</div>
+										<hr class="light-grey-hr ma-0"/>
+										<div class="sl-item">
+											<a href="javascript:void(0)">
+												<div class="sl-avatar">
+													<img class="img-responsive" src="dist/img/avatar.jpg" alt="avatar"/>
+												</div>
+												<div class="sl-content">
+													<span class="inline-block capitalize-font  pull-left truncate head-notifications">Sandy Doe</span>
+													<span class="inline-block font-11  pull-right notifications-time">1pm</span>
+													<div class="clearfix"></div>
+													<p class="truncate">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+												</div>
+											</a>	
+										</div>
+										<hr class="light-grey-hr ma-0"/>
+										<div class="sl-item">
+											<a href="javascript:void(0)">
+												<div class="icon bg-red">
+													<i class="zmdi zmdi-storage"></i>
+												</div>
+												<div class="sl-content">
+													<span class="inline-block capitalize-font  pull-left truncate head-notifications txt-danger">99% server space occupied.</span>
+													<span class="inline-block font-11  pull-right notifications-time">1pm</span>
+													<div class="clearfix"></div>
+													<p class="truncate">consectetur, adipisci velit.</p>
+												</div>
+											</a>	
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="notification-box-bottom-wrap">
+										<hr class="light-grey-hr ma-0"/>
+										<a class="block text-center read-all" href="javascript:void(0)"> read all </a>
+										<div class="clearfix"></div>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown auth-drp">
+							<a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown"><img src="https://img.icons8.com/external-wanicon-two-tone-wanicon/64/000000/external-profile-user-interface-wanicon-two-tone-wanicon.png" alt="user_auth" class="user-auth-img img-circle"/><span class="user-online-status"></span></a>
+							<ul class="dropdown-menu user-auth-dropdown" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+								<li>
+									<a href="profile.html"><i class="zmdi zmdi-account"></i><span>Profil</span></a>
+								</li>
+	
+								<li>
+									<a href="inbox.html"><i class="zmdi zmdi-email"></i><span>Postfach</span></a>
+								</li>
+								<li>
+									<a href="#"><i class="zmdi zmdi-settings"></i><span>Einstellungen</span></a>
+								</li>
+								<li class="divider"></li>
+								<li class="sub-menu show-on-hover">
+									<a href="#" class="dropdown-toggle pr-0 level-2-drp"><i class="zmdi zmdi-check text-success"></i> verfügbar</a>
+									<ul class="dropdown-menu open-left-side">
+										<li>
+											<a href="#"><i class="zmdi zmdi-check text-success"></i><span>verfügbar</span></a>
+										</li>
+										<li>
+											<a href="#"><i class="zmdi zmdi-circle-o text-warning"></i><span>beschäftigt</span></a>
+										</li>
+										<li>
+											<a href="#"><i class="zmdi zmdi-minus-circle-outline text-danger"></i><span>offline</span></a>
+										</li>
+									</ul>   
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="#"><i class="zmdi zmdi-power"></i><span>Log Out</span></a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>	
+			</nav>
+			<!-- /Top Menu Items -->
+			
+			<!-- Left Sidebar Menu -->
+			<div class="fixed-sidebar-left">
+				<ul class="nav navbar-nav side-nav nicescroll-bar">
+					<li class="navigation-header">
+						<span>Main</span> 
+						<i class="zmdi zmdi-more"></i>
+					</li>
+					<li>
+						<a href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard_dr"><div class="pull-left"><i class="zmdi zmdi-laptop mr-20"></i><span class="right-nav-text">Projekte</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+						<ul id="dashboard_dr" class="collapse collapse-level-1">
+							<li>
+								<a href="javascript:void(0);" data-toggle="collapse" data-target="#email_dr">Projektübersicht<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+								<ul id="email_dr" class="collapse collapse-level-2">
+									<li>
+										<a href="project-page2.html">ITLZ23</a>
+									</li>
+									<li>
+										<a href="Code-Snippets/404.html">KTT2</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="add-projects.html">Projekt hinzufügen</a>
+							</li>
+							
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0);" data-toggle="collapse" data-target="#app_dr"><div class="pull-left"><i class="zmdi zmdi-account mr-20"></i><span class="basic-text" class="right-nav-text">Persönlicher Bereich</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+						<ul id="app_dr" class="collapse collapse-level-1">
+							<li>
+								<a href="Code-Snippets/profile.html">Profil</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" data-toggle="collapse" data-target="#contact_dr">E-Mail<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+								<ul id="contact_dr" class="collapse collapse-level-2">
+									<li>
+										<a href="Code-Snippets/inbox.html">Posteingang</a>
+									</li> 
+									<li>
+										<a href="Code-Snippets/404.html">Spam</a>
+									</li>
+									<li>
+										<a href="Code-Snippets/contact-list.html">Kontakte</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="Code-Snippets/calendar.html">Kalender</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0);" ><div class="pull-left"><i class="zmdi zmdi-phone mr-20"></i><span class="basic-text" class="right-nav-text">Kontakt</span></div><div class="pull-right"></i></div><div class="clearfix"></div></a>
+						
+					</li>
+					<li>
+						<a href="Impressum.html"><div class="pull-left"><i class="zmdi zmdi-info mr-20"></i><span class="basic-text" class="right-nav-text">Impressum</span></div><div class="clearfix"></div></a>
+					</li>
+					<li>
+						<a href="Code-Snippets/da"><div class="pull-left"><i class="zmdi zmdi-alert-circle mr-20"></i><span class="basic-text" class="right-nav-text">Datenschutz</span></div><div class="clearfix"></div></a>
+					</li>
+						
+					
+				</ul>
+			</div>
+			<!-- /Left Sidebar Menu -->
+			
+
+			
+			
+			
+	
+				
+			<!-- Main Content -->
+			<div class="page-wrapper">
+				<div class="container-fluid">
+					
+					<!-- Title -->
+					<div class="row heading-bg">
+						<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+							<h5 class="txt-dark">ITLZ23</h5>
+						</div>
+					
+						<!-- Breadcrumb -->
+						<div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+							<ol class="breadcrumb">
+								<li><a href="index.html">Dashboard</a></li>
+								<li class="active"><span>ITLZ23</span></a></li>
+							</ol>
+						</div>
+						<!-- /Breadcrumb -->
+					
+					</div>
+					<!-- /Title -->
+                    
+
+					<!-- Row -->
+
+					<div class="row">
+						<div class="col-md-12">
+
+                            <div class="panel panel-default card-view">
+								<div class="panel-heading">
+									<div class="pull-left">
+										<h6 class="panel-title txt-dark">Projektübersicht</h6>
+                                    </div><br><br>
+                                    
+									<div class="inline"> ProjektID: 245</div> 
+									<button class="btn leave" data-id="demo-modal">Projekt verlassen</button>
+									<button class="btn change">Projekt bearbeiten</button><br><br>
+								
+									<div class="inline">
+										<i class="zmdi zmdi-accounts-alt"></i>
+										7 Teilnehmer </div>
+									<div class="inline1">
+										<i class="zmdi zmdi-timer"></i>
+										256 Tage</div>
+									<div class="inline1">
+										<i class="zmdi zmdi-flag"></i>
+										hohe Prio</div>
+									<br>
+
+				
+                                    <div> Einführung des Chat-Programms Lucid Chat. 
+									Das Programm soll den aktuellen Datenschutzbestimmungen entsprechen und die interne Kommunikation beschleunigen.  </div><br>
+								
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        
+							<div class="row">
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+									<div class="panel panel-default border-panel card-view">
+										<div class="panel-heading">
+											<div class="pull-left">																	
+												<h6 class="panel-title txt-dark">Abgeschlossene Aufgaben</h6>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+										<div  class="panel-wrapper collapse in">
+											<div class="styled-open-task1">
+												94
+											</div>
+											<div>Zuletzt Abgeschlossen: 03.11.2021</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+									<div class="panel panel-default border-panel card-view">
+										<div class="panel-heading">
+											<div class="pull-left">
+												<h6 class="panel-title txt-dark">Offene Aufgaben</h6>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+										<div  class="panel-wrapper collapse in">
+											<div class="styled-open-task2" >
+												26
+											</div>
+											<div>Nächste Fälligkeit: 06.11.2021</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+									<div class="panel panel-default border-panel card-view">
+										<div class="panel-heading">
+											<div class="pull-left">
+												<h6 class="panel-title txt-dark">Fällige Aufgaben</h6>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+										<div  class="panel-wrapper collapse in">
+											<div class="styled-open-task3">
+												10	
+											</div>
+											<div>Fällig seit: 8 Stunden und 2 Tagen</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>	
+
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="panel panel-default card-view">
+										<div class="panel-heading">
+											<div class="pull-left">
+												<h6 class="panel-title txt-dark">Übersicht: Aufgaben nach Fälligkeit</h6>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+										<div class="panel-wrapper collapse in">
+											<div class="panel-body">
+												<div class="flot-container" style="height:250px">
+													<div id="piechart"></div>
+												</div>
+											</div>
+										</div>
+									</div>	
+								</div>
+
+								<div class="col-lg-6">
+									<div class="panel panel-default card-view">
+										<div class="panel-heading">
+											<div class="pull-left">
+												<h6 class="panel-title txt-dark">Aufgabenliste</h6>
+											</div>
+										
+										</div>
+										<div class="panel-wrapper collapse in">
+											<div class="panel-body">
+												<div class="flot-container" style="height:250px">
+													<table class="styled-table">
+														<thead>
+															<tr>
+																<th>ID</th>
+																<th>Titel</th>
+																<th>Zuständigkeit</th>
+																<th>Status</th>
+															
+			
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>1</td>
+																<td>Kick-Off</td>
+																<td>jkw-123</td>
+																<td><span class="label label-success">Abgeschlossen</span> </td>
+															
+								
+															</tr>
+															<tr class="active-row">
+																<td>2</td>
+																<td>Präsenation erstellen</td>
+																<td>adi-123</td>
+																<td><span class="label label-warning">In Bearbeitung</span> </td>
+														
+															</tr>
+															<tr>
+																<td>3</td>
+																<td>Präsentation präsentieren</td>
+																<td>marie-123</td>
+																<td><span class="label label-warning">In Bearbeitung</span> </td>
+															
+															</tr>
+															<tr class="active-row">
+																<td>5</td>
+																<td>Präsentation abschliessen</td>
+																<td>hart-123</td>
+																<td><span class="label label-info">Offen</span> </td>
+															</tr>
+														                  
+														
+														</tbody>
+													</table>                       
+												</div>
+											</div>
+										</div>	
+									</div>	
+								</div>
+							</div>
+
+
+							<div class="panel panel-default card-view">
+								<div class="panel-heading">
+									<div class="pull-left">
+										<h6 class="panel-title txt-dark">Aufgaben</h6>
+                                    </div>
+									<div class="clearfix"></div>
+							<div class="container">
+							
+								<div class="kanban-board">
+									<div class="kanban-block" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)">
+										<strong>Offen</strong>
+										<div class="task-button-block">
+											<button id="task-button" onclick="createTask()">Aufgabe hinzufügen</span>
+										</div>
+										<div class="task" id="task1" draggable="true" ondragstart="drag(event)">
+											<span>Kick-Off planen</span>
+										</div>
+										<div class="task" id="task2" draggable="true" ondragstart="drag(event)">
+											<span>Zuständigkeiten zuteilen</span>
+										</div>
+										<div class="task" id="task3" draggable="true" ondragstart="drag(event)">
+											<span>Beschreibung ergänzen</span>
+										</div>
+				
+										<div class="task" id="task5" draggable="true" ondragstart="drag(event)">
+											<span>Präsenation halten</span>
+										</div>
+										<div class="task" id="task6" draggable="true" ondragstart="drag(event)">
+											<span>Präsentation abschliessen</span>
+										</div>
+									</div>
+									<div class="kanban-block" id="inprogress" ondrop="drop(event)" ondragover="allowDrop(event)">
+										<strong>In Bearbeitung</strong>
+									</div>
+									<div class="kanban-block" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+										<strong>Abgeschlossen</strong>
+									</div>
+									<div class="create-new-task-block" id="create-new-task-block">
+										<strong>Neue Aufgabe</strong>
+										<span class="form-row">
+											<label class="form-row-label" for="task-name">Titel</label>
+											<input class="form-row-input" type="text" name="task-name" id="task-name">
+										</span>
+										<span class="form-row">
+											<label class="form-row-label" for="task-name">Beschreibung</label>
+											<textarea class="form-row-input" name="task-description" id="task-description" cols="70" rows="10"></textarea>
+										</span>
+										<span class="form-row">
+											<label class="form-row-label" for="task-name">Status</label>
+											<select class="form-row-input" name="task-status" id="task-status">
+												<option value="todo">Offen</option>
+												<option value="inprogress">In Bearbeitung</option>
+												<option value="done">Angeschlossen</option>
+											</select>
+										</span>
+										<span class="form-row-buttons">
+											<button id="edit-button" onclick="editTask()">Bearbeiten</span>
+											<button id="save-button" onclick="saveTask()">Sichern</span>
+											<button id="cancel-button" onclick="createTask()">Abbruch</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+								
+							
+
+
+							<div class="panel panel-default card-view">
+								<div class="panel-heading">
+									<div class="pull-left">
+										<h6 class="panel-title txt-dark">Projektteilnehmer</h6>
+                                    </div>
+									<div class="clearfix"></div>
+                                    <table class="styled-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Vorname</th>
+                                                <th>Nachname</th>
+                                                <th>Username</th>
+                                                <th>Projektrolle</th>
+                                                <th>Kontakt</th>
+                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Janik</td>
+                                                <td>Wolf</td>
+                                                <td>jkw-123</td>
+                                                <td><span class="label label-danger">Admin</span> </td>
+                                                <td>jkw-483@gmail.com</td>
+                
+                                            </tr>
+                                            <tr class="active-row">
+                                                <td>Adonis</td>
+                                                <td>Redjepi</td>
+                                                <td>adi-123</td>
+                                                <td><span class="label label-warning">Entwickler</span> </td>
+                                                <td>adi-483@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Marie</td>
+                                                <td>Strüwe</td>
+                                                <td>marie-123</td>
+                                                <td><span class="label label-success">Supporter</span> </td>
+                                                <td>marie-483@gmail.com</td>
+                                            </tr>
+                                            <tr class="active-row">
+                                                <td>Markus</td>
+                                                <td>Hartel</td>
+                                                <td>hart-123</td>
+                                                <td><span class="label label-success">Supporter</span> </td>
+                                                <td>hart-483@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Max</td>
+                                                <td>Muster</td>
+                                                <td>Musti-123</td>
+                                                <td><span class="label label-danger">admin</span> </td>
+                                                <td>musti-483@gmail.com</td>
+                                            </tr>
+                                            <tr class="active-row">
+                                                <td>Lena</td>
+                                                <td>Müller</td>
+                                                <td>mueller-123</td>
+                                                <td><span class="label label-info">Verifizierter Besucher</span> </td>
+                                                <td>mueller-483@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tim</td>
+                                                <td>Schmidt</td>
+                                                <td>schmidt-123</td>
+                                                <td><span class="label label-success">Supporter</span> </td>
+                                                <td>schmidt-483@gmail.com</td>
+                                            </tr>                     
+                                            <!-- and so on... -->
+                                        </tbody>
+                                    </table>                       
+                                </div>
+								</div>
+								
+								</div>
+                                
+								
+							</div>
+						</div>
+					</div>
+					<!-- /Row -->
+				</div>
+				
+				<!-- Footer -->
+				<footer class="footer container-fluid pl-30 pr-30">
+					<div class="row">
+						<div class="col-sm-12">
+							p>2021 &copy; MyTicket Inc.</p>
+						</div>
+					</div>
+				</footer>
+				<!-- /Footer -->
+				
+			</div>
+			<!-- /Main Content -->
+		
+		</div>
+		<!-- /#wrapper -->
+		
+		<!-- JavaScript -->
+		
+		<!-- jQuery -->
+		<script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+		
+		<!-- Bootstrap Core JavaScript -->
+		<script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+				
+		<!-- Summernote Plugin JavaScript -->
+		<script src="vendors/bower_components/summernote/dist/summernote.min.js"></script>
+			
+		<!-- Summernote Wysuhtml5 Init JavaScript -->
+		<script src="dist/js/summernote-data.js"></script>
+		
+		<!-- Slimscroll JavaScript -->
+		<script src="dist/js/jquery.slimscroll.js"></script>
+	
+		<!-- Fancy Dropdown JS -->
+		<script src="dist/js/dropdown-bootstrap-extended.js"></script>
+		
+		<!-- Owl JavaScript -->
+		<script src="vendors/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+	
+		<!-- Switchery JavaScript -->
+		<script src="vendors/bower_components/switchery/dist/switchery.min.js"></script>
+		
+		<!-- Init JavaScript -->
+		<script src="dist/js/init.js"></script>
+
+		<!-- Flot Charts JavaScript -->
+		<script src="vendors/bower_components/Flot/excanvas.min.js"></script>
+		<script src="vendors/bower_components/Flot/jquery.flot.js"></script>
+		<script src="vendors/bower_components/Flot/jquery.flot.pie.js"></script>
+		<script src="vendors/bower_components/Flot/jquery.flot.resize.js"></script>
+		<script src="vendors/bower_components/Flot/jquery.flot.time.js"></script>
+		<script src="vendors/bower_components/Flot/jquery.flot.stack.js"></script>
+		<script src="vendors/bower_components/Flot/jquery.flot.crosshair.js"></script>
+		<script src="vendors/bower_components/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+		<script src="dist/js/flot-data.js"></script>
+		
+		<!-- Piechart Google -->
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script type="text/javascript">
+			// Load google charts
+			google.charts.load('current', {'packages':['corechart']});
+			google.charts.setOnLoadCallback(drawChart);
+			
+			// Draw the chart and set the chart values
+			function drawChart() {
+			  var data = google.visualization.arrayToDataTable([
+			  ['Task', '126',],
+			  ['Offen', 26],
+			  ['Abgeschlossen', 94],
+			  ['Überfällig', 10],
+			  
+			]);
+			
+			  // Optional; add a title and set the width and height of the chart and color
+			  var options = {'title':'', 'width':575, 'height':270, 'slices': {0: {color: '#de8643'}, 1:{color: '#debc43'}, 2:{color: '#de4643'}}};
+			
+			  // Display the chart inside the <div> element with id="piechart"
+			  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+			  chart.draw(data, options);
+			}
+		</script>
+
+
+
+		<script type="text/javascript">
+			function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.currentTarget.appendChild(document.getElementById(data));
+        }
+
+        function createTask(){
+            var x = document.getElementById("inprogress");
+            var y = document.getElementById("done");
+            var z = document.getElementById("create-new-task-block");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                y.style.display = "block";
+                z.style.display = "none";
+            } else {
+                x.style.display = "none";
+                y.style.display = "none";
+                z.style.display = "flex";
+            }
+        }
+
+        function saveTask(){
+            // var saveButton = document.getElementById("save-button");
+            // var editButton = document.getElementById("edit-button");
+            // if (saveButton.style.display === "none") {
+            //     saveButton.style.display = "block";
+            //     editButton.style.display = "none";
+            // } else{
+            //     saveButton.style.display = "none";
+            //     editButton.style.display = "block";
+            // }
+
+            var todo = document.getElementById("todo");
+            var taskName = document.getElementById("task-name").value;
+            todo.innerHTML += `
+            <div class="task" id="${taskName.toLowerCase().split(" ").join("")}" draggable="true" ondragstart="drag(event)">
+                <span>${taskName}</span>
+            </div>
+            `
+        }
+
+        function editTask(){
+            var saveButton = document.getElementById("save-button");
+            var editButton = document.getElementById("edit-button");
+            if (saveButton.style.display === "none") {
+                saveButton.style.display = "block";
+                editButton.style.display = "none";
+            } else{
+                saveButton.style.display = "none";
+                editButton.style.display = "block";
+            }
+        }
+        
+		</script>
+
+
+
+	</body>
+</html>
