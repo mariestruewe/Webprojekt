@@ -55,7 +55,7 @@
 							<ul  class="dropdown-menu alert-dropdown" data-dropdown-in="bounceIn" data-dropdown-out="bounceOut">
 								<li>
 									<div class="notification-box-head-wrap">
-										<span class="notification-box-head pull-left inline-block">notifications</span>
+										<span class="notification-box-head pull-left inline-block">Benachrichtigungen</span>
 										<a class="txt-danger pull-right clear-notifications inline-block" href="javascript:void(0)"> clear all </a>
 										<div class="clearfix"></div>
 										<hr class="light-grey-hr ma-0"/>
@@ -70,10 +70,10 @@
 												</div>
 												<div class="sl-content">
 													<span class="inline-block capitalize-font  pull-left truncate head-notifications">
-													New subscription created</span>
+													Neue Aufgabe zugewiesen</span>
 													<span class="inline-block font-11  pull-right notifications-time">2pm</span>
 													<div class="clearfix"></div>
-													<p class="truncate">Your customer subscribed for the basic plan. The customer will pay $25 per month.</p>
+													<p class="truncate">Nutzer mueller-123 hat Ihnen eine neue Aufgabe zugewiesen</p>
 												</div>
 											</a>	
 										</div>
@@ -84,10 +84,10 @@
 													<i class="zmdi zmdi-trending-down"></i>
 												</div>
 												<div class="sl-content">
-													<span class="inline-block capitalize-font  pull-left truncate head-notifications txt-warning">Server #2 not responding</span>
+													<span class="inline-block capitalize-font  pull-left truncate head-notifications txt-warning">Aufgabe #1 ist überfällig</span>
 													<span class="inline-block font-11 pull-right notifications-time">1pm</span>
 													<div class="clearfix"></div>
-													<p class="truncate">Some technical error occurred needs to be resolved.</p>
+													<p class="truncate">Bitte schliessen Sie die Aufgabe ab.</p>
 												</div>
 											</a>	
 										</div>
@@ -98,27 +98,14 @@
 													<i class="zmdi zmdi-email"></i>
 												</div>
 												<div class="sl-content">
-													<span class="inline-block capitalize-font  pull-left truncate head-notifications">2 new messages</span>
+													<span class="inline-block capitalize-font  pull-left truncate head-notifications">2 neue Nachrichten</span>
 													<span class="inline-block font-11  pull-right notifications-time">4pm</span>
 													<div class="clearfix"></div>
 													<p class="truncate"> The last payment for your G Suite Basic subscription failed.</p>
 												</div>
 											</a>	
 										</div>
-										<hr class="light-grey-hr ma-0"/>
-										<div class="sl-item">
-											<a href="javascript:void(0)">
-												<div class="sl-avatar">
-													<img class="img-responsive" src="dist/img/avatar.jpg" alt="avatar"/>
-												</div>
-												<div class="sl-content">
-													<span class="inline-block capitalize-font  pull-left truncate head-notifications">Sandy Doe</span>
-													<span class="inline-block font-11  pull-right notifications-time">1pm</span>
-													<div class="clearfix"></div>
-													<p class="truncate">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
-												</div>
-											</a>	
-										</div>
+										
 										<hr class="light-grey-hr ma-0"/>
 										<div class="sl-item">
 											<a href="javascript:void(0)">
@@ -129,7 +116,7 @@
 													<span class="inline-block capitalize-font  pull-left truncate head-notifications txt-danger">99% server space occupied.</span>
 													<span class="inline-block font-11  pull-right notifications-time">1pm</span>
 													<div class="clearfix"></div>
-													<p class="truncate">consectetur, adipisci velit.</p>
+													<p class="truncate">Change your plan to premium for more free space</p>
 												</div>
 											</a>	
 										</div>
@@ -332,7 +319,7 @@
 										</div>
 										<div  class="panel-wrapper collapse in">
 											<div class="styled-open-task1">
-												94
+												1
 											</div>
 											<div>Zuletzt Abgeschlossen: 03.11.2021</div>
 										</div>
@@ -348,7 +335,7 @@
 										</div>
 										<div  class="panel-wrapper collapse in">
 											<div class="styled-open-task2" >
-												26
+												3
 											</div>
 											<div>Nächste Fälligkeit: 06.11.2021</div>
 										</div>
@@ -364,7 +351,7 @@
 										</div>
 										<div  class="panel-wrapper collapse in">
 											<div class="styled-open-task3">
-												10	
+												1	
 											</div>
 											<div>Fällig seit: 8 Stunden und 2 Tagen</div>
 										</div>
@@ -427,7 +414,7 @@
 																<td>2</td>
 																<td>Präsenation erstellen</td>
 																<td>adi-123</td>
-																<td><span class="label label-warning">In Bearbeitung</span> </td>
+																<td><span class="label label-danger">Überfällig</span> </td>
 														
 															</tr>
 															<tr>
@@ -438,7 +425,7 @@
 															
 															</tr>
 															<tr class="active-row">
-																<td>5</td>
+																<td>4</td>
 																<td>Präsentation abschliessen</td>
 																<td>hart-123</td>
 																<td><span class="label label-info">Offen</span> </td>
@@ -460,10 +447,10 @@
 									<div class="pull-left">
 										<h6 class="panel-title txt-dark">Aufgaben</h6>
                                     </div>
-									<div class="clearfix"></div>
+									
 							<div class="container">
-							
 								<div class="kanban-board">
+
 									<div class="kanban-block" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)">
 										<strong>Offen</strong>
 										<div class="task-button-block">
@@ -487,9 +474,15 @@
 									<div class="kanban-block" id="inprogress" ondrop="drop(event)" ondragover="allowDrop(event)">
 										<strong>In Bearbeitung</strong>
 									</div>
+
+									<div class="kanban-block" id="inprogress" ondrop="drop(event)" ondragover="allowDrop(event)">
+										<strong>Überfällig</strong>
+									</div>
+
 									<div class="kanban-block" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
 										<strong>Abgeschlossen</strong>
 									</div>
+
 									<div class="create-new-task-block" id="create-new-task-block">
 										<strong>Neue Aufgabe</strong>
 										<span class="form-row">
@@ -601,11 +594,7 @@
 								</div>
 								
 								</div>
-
-								  <!-- Site footer -->
-   
-
-							</div>		
+								</div>					
 							</div>
 						</div>
 					</div>
@@ -613,6 +602,7 @@
 				</div>
 				
 				<!-- Footer -->
+				
 				
 				<!-- /Footer -->
 				
@@ -673,9 +663,9 @@
 			function drawChart() {
 			  var data = google.visualization.arrayToDataTable([
 			  ['Task', '126',],
-			  ['Offen', 26],
-			  ['Abgeschlossen', 94],
-			  ['Überfällig', 10],
+			  ['Offen', 3],
+			  ['Abgeschlossen', 1],
+			  ['Überfällig', 1],
 			  
 			]);
 			
