@@ -215,79 +215,196 @@
 				</ul>
 			</div>
 			<!-- /Left Sidebar Menu -->
-			<!-- Main Content -->
-			<div class="page-wrapper">
-				<div class="container-fluid">
-					<!-- Title -->
-					<div class="row heading-bg">
-						<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-						  <h5 class="txt-dark">Kalender</h5>
-						</div>
-						<!-- Breadcrumb -->
-						<div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
-						  <ol class="breadcrumb">
-							<li>Dashboard</li>
-							<li class="active"><span>Kalender</span></li>
-						  </ol>
-						</div>
-						<!-- /Breadcrumb -->
+        <!-- Main Content -->
+		<div class="page-wrapper">
+            <div class="container-fluid">
+				<!-- Title -->
+				<div class="row heading-bg">
+					<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+					  <h5 class="txt-dark">Einzelansicht - Posteingang</h5>
 					</div>
-					<!-- /Title -->
-					<!-- Row -->
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="panel panel-default card-view">
-								<div class="panel-wrapper collapse in">
-									<div class="panel-body">
-										<div class="add-event-wrap">
-											<div class="calendar-event btn btn-success">Daily Standup<a href="javascript:void(0);" class="remove-calendar-event"><i class="fa fa-times fa-fw"></i></a></div>
-											<div class="calendar-event btn btn-info">Rollout Nachbesprechung<a href="javascript:void(0);" class="remove-calendar-event"><i class="fa fa-times fa-fw"></i></a></div>
-											<div class="calendar-event btn btn-warning">Projektbesprechung MyTicket<a href="javascript:void(0);" class="remove-calendar-event"><i class="fa fa-times fa-fw"></i></a></div>
-											<div class="calendar-event btn btn-primary">Mittagessen mit Azubi Max M&uuml;ller<a href="javascript:void(0);" class="remove-calendar-event"><i class="fa fa-times fa-fw"></i></a></div>
-											<input type="text" placeholder="Event hinzufügen" class="form-control add-event mt-30">
-										</div>
-										<div class="calendar-wrap mt-40">
-										  <div id="calendar"></div>
+					<!-- Breadcrumb -->
+					<div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+					  <ol class="breadcrumb">
+						<li>Dashboard</li>
+						<li><a href="inbox.html"><span>Posteingang</span></a></li>
+						<li class="active"><span>Einzelansicht - Posteingang</span></li>
+					  </ol>
+					</div>
+					<!-- /Breadcrumb -->
+				</div>
+				<!-- /Title -->
+				<!-- Row -->
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="panel panel-default card-view  pa-0">
+							<div class="panel-wrapper collapse in">
+								<div class="panel-body pa-0">
+									<div class="mail-box">
+										<div class="row">
+											<aside class="col-lg-3 col-md-4 pr-0">
+												<div class="mt-20 mb-20 ml-15 mr-15">
+												</div>
+											</aside>
+											<aside class="col-lg-9 col-md-8 pl-0">
+												<div class="panel panel-refresh pa-0">
+													<div class="panel-heading pt-20 pb-20 pl-15 pr-15">
+														<div class="pull-right">
+															<form role="search" class="inbox-search inline-block pull-left mr-15">
+																<div class="input-group">
+																	<input name="example-input1-group2" class="form-control" placeholder="Search" type="text">
+																	<span class="input-group-btn">
+																	<button type="button" class="btn  btn-default" data-target="#search_form" data-toggle="collapse" aria-label="Close" aria-expanded="true"><i class="zmdi zmdi-search"></i></button>
+																	</span>
+																</div>
+															</form>
+															<a href="#" class="pull-left inline-block refresh">
+																<i class="zmdi zmdi-replay"></i>
+															</a>
+														</div>
+														<div class="clearfix"></div>
+													</div>
+													<div class="panel-wrapper collapse in">
+														<div class="panel-body inbox-body pa-0">
+															<div class="heading-inbox">
+																<div class="container-fluid">
+																	<div class="pull-left">
+																		<div class="compose-btn">
+																			<a class="btn btn-sm mr-10" href="#" data-toggle="modal" title="Compose"><i class="zmdi zmdi-chevron-left"></i></a>
+																		</div>
+																	</div>
+																	<div class="pull-right text-right">
+																		<button class="btn btn-sm mr-10" title="" type="button" ><i class="zmdi zmdi-print"></i> </button>
+																		<button class="btn btn-sm mr-10" title=""><i class="zmdi zmdi-delete"></i></button>
+																		<div class="inline-block dropdown">
+																			<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" role="button"><i class="zmdi zmdi-more"></i></a>
+																			<ul class="dropdown-menu bullet dropdown-menu-right"  role="menu">
+																				<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>ungelesen</a></li>
+																				<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>wichtig</a></li>
+																				<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Spam</a></li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<hr class="light-grey-hr mt-10 mb-15"/>
+																<div class="container-fluid mb-20">	
+																	<h4 class="weight-500"> Added a new class: Login Class Fast Site</h4>
+																</div>	
+															</div>
+															<div class="sender-info">
+																<div class="container-fluid">
+																	<div class="sender-img-wrap pull-left mr-20">
+																		<img class="sender-img" alt="user" src="https://img.icons8.com/external-wanicon-two-tone-wanicon/64/000000/external-profile-user-interface-wanicon-two-tone-wanicon.png">
+																	</div>
+																	<div class="sender-details   pull-left">
+																		<span class="capitalize-font pr-5 txt-dark block font-15 weight-500 head-font">Clay Masse</span>
+																		<span class="block">
+																			an
+																			<span>mich</span>
+																		</span>	
+																	</div>	
+																	<div class="pull-right">
+																		<div class="inline-block mr-5">
+																			<span class="inbox-detail-time-1 font-12">9:27 AM</span>
+																			<span class="inbox-detail-time-2 font-12 inline-block">(2 hours ago)</span>
+																		</div>
+																		<div class="inline-block dropdown">
+																			<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" role="button"><i class="zmdi   zmdi-more-vert"></i></a>
+																			<ul class="dropdown-menu bullet dropdown-menu-right"  role="menu">
+																				<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>antworten</a></li>
+																				<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>weiterleiten</a></li>
+																				<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>l&ouml;schen</a></li>
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+															</div>
+															<div class="container-fluid view-mail mt-20">
+																<p>Hi Madalyn,</p>
+																<p>ich habe endlich die neue Logoin-Classe fertig gestellt. Deine Anregungen haben mir dabei sehr geholfen.<br>
+																	Bitte sieh dir die Klasse an, bevor ich den Entwicklungsbranch schlie&szlig;e.
+																</p>
+																Clay
+															</div>
+															<hr class="light-grey-hr mt-20 mb-20"/>
+															<div class="container-fluid attachment-mail mt-40 mb-40">
+																<div class="download-blocks mb-20">
+																	<span class="pr-15"><i class="zmdi zmdi-attachment-alt pr-10"></i>3 Anh&auml;nge</span>
+																	<a href="#"><i class="zmdi zmdi-download pr-10"></i>herunterladen</a>
+																</div>
+																<ul>
+																	<li>
+																		<a href="#" class="atch-thumb">
+																			<div class="attached-img-container" style="background-image:url(dist/img/gallery/equal-size/mock1.jpg)"></div>
+																			<div class="file-name">
+																				Anhang 1
+																			</div>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="#" class="atch-thumb">
+																			<div class="attached-img-container" style="background-image:url(dist/img/gallery/equal-size/mock2.jpg)"></div>
+																			<div class="file-name">
+																				Anhang 2
+																			</div>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="#" class="atch-thumb">
+																			<div class="attached-img-container" style="background-image:url(dist/img/gallery/equal-size/mock3.jpg)"></div>
+																			<div class="file-name">
+																				Anhang 3
+																			</div>
+																		</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</aside>
 										</div>
 									</div>
 								</div>
-							</div>	
-						</div>	
-					</div>	
-						<!-- /Row -->
-				</div>
-				<!-- Footer -->
-				<footer class="footer container-fluid pl-30 pr-30">
-					<div class="row">
-						<div class="col-sm-12">
-							<p>2021 &copy; MyTicket</p>
+							</div>
 						</div>
 					</div>
-				</footer>
-				<!-- /Footer -->
+				</div>
+				<!-- /Row -->
 			</div>
-			<!-- /Main Content -->
-		</div>
-		<!-- /#wrapper -->
-		<!-- JavaScript -->
-		<!-- jQuery -->
-		<script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
-		<!-- Bootstrap Core JavaScript -->
-		<script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-		<!-- Calender JavaScripts -->
-		<script src="vendors/bower_components/moment/min/moment.min.js"></script>
-		<script src="vendors/jquery-ui.min.js"></script>
-		<script src="vendors/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
-		<script src="dist/js/fullcalendar-data.js"></script>
-		<!-- Slimscroll JavaScript -->
-		<script src="dist/js/jquery.slimscroll.js"></script>
-		<!-- Owl JavaScript -->
-		<script src="vendors/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
-		<!-- Switchery JavaScript -->
-		<script src="vendors/bower_components/switchery/dist/switchery.min.js"></script>
-		<!-- Fancy Dropdown JS -->
-		<script src="dist/js/dropdown-bootstrap-extended.js"></script>
-		<!-- Init JavaScript -->
-		<script src="dist/js/init.js"></script>
-	</body>
+			<!-- Footer -->
+			<footer class="footer container-fluid pl-30 pr-30">
+				<div class="row">
+					<div class="col-sm-12">
+						<p>2021 &copy; MyTicket</p>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+        </div>
+        <!-- /Main Content -->
+    </div>
+    <!-- /#wrapper -->
+	<!-- JavaScript -->
+    <!-- jQuery -->
+    <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!-- wysuhtml5 Plugin JavaScript -->
+	<script src="vendors/bower_components/wysihtml5x/dist/wysihtml5x.min.js"></script>
+	<script src="vendors/bower_components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.all.js"></script>
+	<!-- Fancy Dropdown JS -->
+	<script src="dist/js/dropdown-bootstrap-extended.js"></script>
+	<!-- Bootstrap Wysuhtml5 Init JavaScript -->
+	<script src="dist/js/bootstrap-wysuhtml5-data.js"></script>
+	<!-- Slimscroll JavaScript -->
+	<script src="dist/js/jquery.slimscroll.js"></script>
+	<!-- Owl JavaScript -->
+	<script src="vendors/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+	<!-- Switchery JavaScript -->
+	<script src="vendors/bower_components/switchery/dist/switchery.min.js"></script>
+	<!-- Init JavaScript -->
+	<script src="dist/js/init.js"></script>
+</body>
 </html>
