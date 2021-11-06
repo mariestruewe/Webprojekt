@@ -291,3 +291,7 @@ i {
   width: 100%;
   height: 100px;
 }
+
+.aligncenter{
+  text-align: center;
+}
