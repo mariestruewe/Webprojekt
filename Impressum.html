@@ -166,7 +166,6 @@
 				</div>	
 			</nav>
 			<!-- /Top Menu Items -->
-			
 			<!-- Left Sidebar Menu -->
 			<div class="fixed-sidebar-left">
 				<ul class="nav navbar-nav side-nav nicescroll-bar">
@@ -177,7 +176,6 @@
                     <li>
 						<a href="dashboard.html"><div class="pull-left"><i class="zmdi zmdi-laptop mr-20 mr-20"></i><span class="basic-text" class="right-nav-text">Projektübersicht</span></div><div class="clearfix"></div></a>
 					</li>
-					
 					<li>
 						<a href="javascript:void(0);" data-toggle="collapse" data-target="#app_dr"><div class="pull-left"><i class="zmdi zmdi-account mr-20"></i><span class="basic-text" class="right-nav-text">Persönlicher Bereich</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
 						<ul id="app_dr" class="collapse collapse-level-1">
@@ -288,13 +286,25 @@
                             <p class="muted">
                                 <h6>Kontaktformular:</h6>
                                 Bitte verwenden Sie dieses Formular, um mit uns in Kontakt zu treten.
-                                <form>
-                                    <textarea name="Nachricht" required placeholder="Ihre Nachricht"></textarea>
-                                    <label for="Checkbox_Kontaktformular">Ich habe die Datenschutzbestimmungen gelesen.</label>
-                                    <input type="checkbox" name="Datenschutz_Kontaktformular" value="Datenschutzbestimmungen gelesen" required>
-                                    <label for="Kontaktadresse">Ihre Mailadresse:</label>
-                                    <input name="Kontaktadresse" type="email" required>
-                                    <input type="submit" value="absenden" onclick="kontaktformularVerarbeiten()">
+								<form>
+									<div class="form-group">
+										<label class="control-label mb-10 text-left">Ihre Nachricht</label>
+										<textarea class="form-control" rows="5"></textarea>
+										<div class="checkbox checkbox-primary">
+											<input id="Checkbox_Kontaktformular" type="checkbox" value="Datenschutzbestimmungen gelesen" checked="" required>
+												<label for="Checkbox_Kontaktformular">
+													Ich habe die Datenschutzbestimmungen gelesen.
+												</label>
+											</input>
+										</div>
+										<label class="control-label mb-10 text-left">
+											<span class="help">
+												Ihre Mailadresse:
+											</span>
+										</label>
+										<input type="text" class="form-control" type="email" required value="Beispiel@test.de">
+										<input type="submit" value="absenden" onclick="kontaktformularVerarbeiten()">
+									</div>
                                 </form>
                             </p>
                         </div>
